@@ -1,4 +1,4 @@
-# Logs
+/# Logs
 logs
 *.log
 npm-debug.log*
@@ -24,7 +24,7 @@ coverage
 build/Release
 
 # Dependency directory
-node_modules
+/node_modules
 
 # Optional npm cache directory
 .npm
