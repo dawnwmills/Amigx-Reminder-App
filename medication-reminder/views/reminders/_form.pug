@@ -5,7 +5,7 @@
 .form-group
   label.col-sm-4.control-label(for='inputPhoneNumber') Phone Number
   .col-sm-8
-    input#inputPhoneNumber.form-control(type='number', name='phoneNumber', placeholder='Phone Number', required='', value=reminder.phoneNumber)
+    input#inputPhoneNumber.form-control(type='number', name='phoneNumber', placeholder='19191235678', required='', value=reminder.phoneNumber)
 .form-group
   label.col-sm-4.control-label(for='time') Reminder Date
   .col-sm-8
@@ -14,7 +14,7 @@
   label.col-sm-4.control-label(for='selectNotification') Notification Time
   .col-sm-8
     select#selectDelta.form-control(name='notification', required='', value=reminder.notification)
-      option(selected=reminder.notification == '', value='') Select a time
+      option(selected=reminder.notification == '', value='') Set Alert Time
       option(selected=reminder.notification == '15', value='15') 15 Minutes
       option(selected=reminder.notification == '30', value='30') 30 Minutes
       option(selected=reminder.notification == '45', value='45') 45 Minutes
