@@ -1,0 +1,14 @@
+
+language: node_js
+node_js:
+- 'stable'
+- '5.12.0'
+- '4.6.0'
+services: mongodb
+env:
+  global:
+    - export TWILIO_ACCOUNT_SID=ACacc47be6412453dfa51796565790b895
+    - export TWILIO_AUTH_TOKEN=763a5818ff2c9c0bc08d798205ec3e4c
+    - export TWILIO_PHONE_NUMBER=+19193723590
+    - export MONGO_URL=Mongo-Url
+    - export MONGO_URL_TEST=mongodb://localhost/appointment-reminders-node-test
