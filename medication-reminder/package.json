@@ -1,17 +1,56 @@
 {
   "name": "medication-reminder",
   "version": "1.0.0",
-  "description": "medication reminder app for amigx",
-  "main": "app.js",
-  "directories": {
-    "test": "test"
-  },
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "test": "NODE_ENV=test && ./node_modules/.bin/eslint . && node_modules/mocha/bin/mocha test"
+  },
+  "description": "Medication reminder app for AMIGX",
+  "author": {
+    "name": "Dawn Mills",
+    "email": "dawnwmills@gmail.com"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TwilioDevEd/appointment-reminders-node"
   },
   "keywords": [
-    "medicine"
+    "node",
+    "medication reminders",
+    "medicine",
+    "twilio",
+    "express",
+    "sms",
+    "notification"
   ],
-  "author": "Dawn Mills",
-  "license": "ISC"
+  "engines": {
+    "node": ">=6.x"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "cookie-parser": "~1.4.3",
+    "cron": "^1.1.0",
+    "debug": "~2.3.0",
+    "dotenv-safe": "^4.0.4",
+    "eslint": "^3.19.0",
+    "express": "~4.14.0",
+    "moment": "^2.11.2",
+    "moment-timezone": "^0.5.0",
+    "mongoose": "^4.4.3",
+    "morgan": "~1.7.0",
+    "pug": "^2.0.0-beta.12",
+    "serve-favicon": "~2.3.0",
+    "twilio": "~3.0.0-rc.13"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "cheerio": "^0.22.0",
+    "eslint-config-google": "^0.7.1",
+    "mocha": "^3.1.2",
+    "mongo-in-memory": "0.0.5",
+    "proxyquire": "^1.7.10",
+    "supertest": "^2.0.1"
+  }
 }
