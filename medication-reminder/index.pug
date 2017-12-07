@@ -1,0 +1,26 @@
+extends ../layout
+
+block content
+  table.table
+      thead
+        tr
+          th Name
+          th Phone Number
+          th Reminder Time
+          th Alert Time
+          th Timezone
+          th Actions
+          th
+      tbody
+        each reminder in reminders
+          tr
+            td  !{reminder.name}
+            td  !{reminder.phoneNumber}
+            td  !{reminder.time}
+            td  !{reminder.notification}
+            td  !{reminder.timeZone}
+            td
+              a.btn.btn-default.btn-sm(href="/reminders/" + reminder.id + "/edit") Edit
+            td
+              form(action="/reminders/" + reminder.id + "/delete",method="POST")
+                button.btn.btn-danger.btn-sm(type='submit') Delete
