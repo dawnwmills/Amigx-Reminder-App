@@ -35,3 +35,5 @@ build/Release
 #local env file
 .env.local
 .env
+
+.DS_Store
